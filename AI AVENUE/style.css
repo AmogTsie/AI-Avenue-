@@ -2,3 +2,11 @@
     padding:0px;
     margin:0px;
 }
+
+.Socials {
+    background-color: rgb(71, 124, 124);
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+
