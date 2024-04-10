@@ -70,7 +70,7 @@ h1 {
 
 /* Socials Styling */
 .Socials {
-    background-color: rgb(71, 124, 124);
+    background-color: linear-gradient(to top, rgb(36, 188, 214), rgb(83, 92, 226), rgb(220, 135, 235)); 
     display: grid;
     align-items: center;
     justify-content: space-around;
