@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!--nav html-->
+    <header>
+      <!--logo div-->
+      <div class="logo">
+        <img src="images/ai-avenue-high-resolution-logo.jpeg" alt="Your Logo" />
+      </div>
+
+      <!--menu div-->
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="moreblogs.html">MORE BLOGS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 id="home">Hello</h1>
+    <!---Container-->
+    <h1 id="about">About AI</h1>
+    <div class="Container">
+      <!---card1-->
+      <div class="card1">
+        <figure><img src="./images/unnamed.png" alt="img" /></figure>
+        <h3></h3>
+        <p>Hello my name is</p>
+      </div>
+      <!---card2-->
+      <div class="card2">
+        <h3>2</h3>
+        <p></p>
+      </div>
+      <!----card3---->
+      <div class="card3">
+        <h3>3</h3>
+        <p></p>
+      </div>
+      <!--card4-->
+      <div class="card4">
+        <h3>4</h3>
+        <p></p>
+      </div>
+      <!----card5-->
+      <div class="card5">
+        <h3>5</h3>
+        <p></p>
+      </div>
+      <!---card6-->
+      <div class="card6">
+        <h3>6</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          molestiae ipsam iste dicta non eum porro voluptate nam quibusdam enim?
+          Harum sed consequatur veritatis! Adipisci quas corrupti nesciunt
+          quibusdam eligendi!
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Subscribe Form Part -->
+
+    <div class="container">
+      <h2 id="contact">Subscribe to our Newsletter</h2>
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit" value="btn">Subscribe</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzwX9jqaQEVuMvydU4TiHvP1lo02MI0-Tm4cwl2775kxIXE59bS9fR_pdia6-ZBWZq68Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Subscribed!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- Subscribe Form Part -->
+
+    <footer>
+      <div class="Socials">
+        <h2 style="color: white">Socials</h2>
+        <a href="https://www.instagram.com/">Instagram</a> <br />
+        <a href="https://www.facebook.com/">Facebook</a><br />
+        <a href="https://twitter.com/">Twitter</a><br />
+      </div>
+    </footer>
+  </body>
+</html>
