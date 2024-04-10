@@ -89,11 +89,12 @@ h1 {
 
 /* Socials Styling */
 .Socials {
-    background-color: #B0F7FF;
+    background-color: linear-gradient(to top, rgb(36, 188, 214), rgb(83, 92, 226), rgb(220, 135, 235)); /* Gradient background */
     display: grid;
     align-items: center;
     justify-content: space-around;
 }
+
 hr{
     background-color: rgb(15, 139, 206);
     height: 2px;
