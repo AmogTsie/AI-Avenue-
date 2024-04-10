@@ -45,6 +45,40 @@
         </div>
     </div>
     <hr>
+
+                      <!-- Subscribe Form Part -->
+
+                      <div class="container">
+                        <h2>Subscribe to our Newsletter</h2>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <button type="submit" value="btn">Subscribe</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                    
+                    <script>
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbzwX9jqaQEVuMvydU4TiHvP1lo02MI0-Tm4cwl2775kxIXE59bS9fR_pdia6-ZBWZq68Q/exec'
+                        const form = document.forms['submit-to-google-sheet']
+                        const msg = document.getElementById("msg")
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => {
+                                msg.innerHTML = "Subscribed!"
+                                setTimeout(function(){
+                                    msg.innerHTML = ""
+                                },5000)
+                                form.reset()
+                            })
+                            .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
+                      
+                                          <!-- Subscribe Form Part -->
+
+
     <footer>
         <div class="Socials">
             <h2 style="color:white;" >Socials</h2>
