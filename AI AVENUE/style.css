@@ -102,13 +102,24 @@ hr{
 
 /* CSS Newsletter */
 
-.container {
+.formcontainer {
     width: 300px;
-    margin: 100px auto;
-    background-color: #fff;
+    margin: 80px auto;
+    background-color: #0056b3;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(116, 115, 115, 0.1);
+    height: 200px;
+}
+.formcontainer button{
+    border-radius: 30px;
+    background-color: #0056b3;
+}
+.formcontainer button:hover{
+    background-color: #fff;
+}
+.formcontainer{
+    font-size:20px;
 }
 
 h3 {
@@ -117,9 +128,11 @@ h3 {
     color: #00f;
 }
 
+
 form {
     text-align: center;
 }
+
 
 input[type="text"],
 input[type="email"],
@@ -142,6 +155,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+#formde h2{
+     text-align: center;
+     font-size: 30px;
+}
+#formde p{
+    text-align: center;
+
 }
 
 #msg {
