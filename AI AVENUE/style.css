@@ -150,4 +150,16 @@ input[type="submit"]:hover {
     display: block;
 }
 
+.Socials{
+    display: flex;
+    margin: 10px;
+    
+}
+
+.icon{
+    margin-right: 0;
+}
+
+
+
 /* CSS Newsletter */
