@@ -12,9 +12,15 @@ body {
   
   .logo img {
     width: 200px;
-    height: auto; 
+    height: 100px; 
   }
 
+.Video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
 ul {
     display: flex;
     list-style-type: none; /*dots*/
@@ -118,7 +124,7 @@ h1 {
 /* Socials Styling */
 .Socials {
     background-color: linear-gradient(to top, rgb(36, 188, 214), rgb(83, 92, 226), rgb(220, 135, 235)); /* Gradient background */
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
