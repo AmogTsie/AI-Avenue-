@@ -29,7 +29,6 @@ li a {
     text-decoration: none; /* removing underlined line*/
 }
 
-
 /* Container Styling */
 .card1 {
     background-color:#ffffff;
@@ -123,9 +122,108 @@ h1 {
     justify-content: space-around;
 }
 
-hr {
+hr{
     background-color: rgb(15, 139, 206);
     height: 2px;
 }
 
+/* CSS Newsletter */
 
+.formcontainer {
+    width: 300px;
+    margin: 80px auto;
+    background-color: #0056b3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(116, 115, 115, 0.1);
+    height: 210px;
+}
+.formcontainer button{
+    border-radius: 30px;
+    background-color: #0056b3;
+}
+.formcontainer button:hover{
+    background-color: #fff;
+}
+.formcontainer{
+    font-size:20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00f;
+}
+
+
+form {
+    text-align: center;
+}
+#contentform h2{
+    text-align: center;
+    font-size: 30px;
+}
+#contentform p{
+   text-align: center;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #00f;
+    border-radius: 5px;
+    color: #00f;
+    background-color: #454444;
+}
+
+input[type="submit"] {
+    background-color: #00f;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+#formde h2{
+     text-align: center;
+     font-size: 30px;
+}
+#formde p{
+    text-align: center;
+
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+
+/* CSS footer */
+footer{
+    background-color: #454444;
+    padding: 90px;
+
+}
+.Socials{
+    display: flex;
+    margin: 10px;
+    
+}
+
+.icon{
+    margin-right: 0;
+}
+
+footer{
+    background-color: #454444;
+    padding: 90px;
+}
